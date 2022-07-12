@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  static const title = 'Native splash Screen';
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'DR - Fundicao',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const MyHomePage(title: 'DR - Fundicao'),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'DR - Fundicao',
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: const MyHomePage(title: 'DR - Fundicao'),
+      );
 }
 
 class MyHomePage extends StatefulWidget {
