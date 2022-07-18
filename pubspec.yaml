@@ -19,6 +19,7 @@ dependencies:
   flutter_simple_treeview: ^3.0.1
   
   flutter_native_splash: ^2.0.1+1
+  carousel_slider: ^4.1.1  
 
 flutter_native_splash:
   background_image: assets/background.png

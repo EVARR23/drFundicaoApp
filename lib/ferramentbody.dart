@@ -1,3 +1,4 @@
+import 'package:drfundicaoapp/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_treeview/flutter_simple_treeview.dart';
 
@@ -29,7 +30,17 @@ TreeView body() {
     ),
     TreeNode(
       content: Text("G 100 - Inclusões ou Anomalias na Estrutura"),
-      children: [TreeNode(content: Text("1")), TreeNode(content: Text("2"))],
+      children: [
+        TreeNode(
+            content: IconButton(
+                iconSize: 50,
+                icon: Icon(Icons.remove_circle),
+                color: Colors.teal,
+                padding: const EdgeInsets.all(0.0),
+                onPressed: () {
+                  body1();
+                }))
+      ],
     )
   ]);
 }
