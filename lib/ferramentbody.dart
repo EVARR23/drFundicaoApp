@@ -1,19 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_treeview/flutter_simple_treeview.dart';
 
-// Container body() {
-//   return Container(
-//       color: Colors.orange,
-//       child: TreeView(
-//         nodes: [
-//           TreeNode(content: Text("Texto Principal"), children: [
-//             TreeNode(content: Text("Texto Primeiro")),
-//             TreeNode(content: Text("Text Secundário"))
-//           ])
-//         ],
-//       ));
-// }
-
 TreeView body() {
   return TreeView(nodes: [
     TreeNode(
