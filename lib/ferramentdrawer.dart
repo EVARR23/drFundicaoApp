@@ -7,12 +7,27 @@ Drawer drawer(BuildContext context) {
       children: [
         const DrawerHeader(
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: Colors.orange,
           ),
-          child: Text('Drawer Header'),
+          child: Align(
+            alignment: Alignment.topCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                //border
+                radius: 110,
+                backgroundColor: Colors.brown,
+                child: CircleAvatar(
+                  radius: 100,
+                  backgroundImage: NetworkImage(
+                      'https://cdn.pixabay.com/photo/2017/09/27/15/52/man-2792456_1280.jpg'),
+                ),
+              ),
+            ),
+          ),
         ),
         ListTile(
-          title: const Text('Item 1'),
+          title: const Text('Login'),
           onTap: () {
             Navigator.pop(context);
           },

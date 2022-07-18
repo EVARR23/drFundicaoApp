@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 AppBar appBar() {
-  return AppBar(title: const Text('AppBar-básico'), actions: <Widget>[
+  return AppBar(title: const Text('DR - Fundicao'), actions: <Widget>[
     // botoes de acções
     IconButton(
       icon: Icon(choices[0].icon),
