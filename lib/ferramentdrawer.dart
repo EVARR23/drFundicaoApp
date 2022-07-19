@@ -1,3 +1,4 @@
+import 'package:drfundicaoapp/teladecadastro.dart';
 import 'package:flutter/material.dart';
 
 Drawer drawer(BuildContext context) {
@@ -27,15 +28,18 @@ Drawer drawer(BuildContext context) {
           ),
         ),
         ListTile(
-          title: const Text('-Login'),
+          title: const Text('Login'),
           onTap: () {
             Navigator.pop(context);
           },
         ),
         ListTile(
-          title: const Text('cadastro'),
+          title: const Text('Cadastro'),
           onTap: () {
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SecondRoute()),
+            );
           },
         ),
         ListTile(
@@ -53,4 +57,25 @@ Drawer drawer(BuildContext context) {
       ],
     ),
   );
+}
+
+class SecondRoute extends StatelessWidget {
+  // const SecondRoute({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Second Route'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            // Navigate back to first route when tapped.
+          },
+          child: const Text('Go back!'),
+        ),
+      ),
+    );
+  }
 }
