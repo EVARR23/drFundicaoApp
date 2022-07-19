@@ -27,13 +27,13 @@ Drawer drawer(BuildContext context) {
           ),
         ),
         ListTile(
-          title: const Text('Login'),
+          title: const Text('-Login'),
           onTap: () {
             Navigator.pop(context);
           },
         ),
         ListTile(
-          title: const Text('Item 2'),
+          title: const Text('cadastro'),
           onTap: () {
             Navigator.pop(context);
           },

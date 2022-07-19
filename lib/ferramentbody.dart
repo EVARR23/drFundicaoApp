@@ -1,3 +1,5 @@
+import 'package:drfundicaoapp/carousel_slider.dart';
+import 'package:drfundicaoapp/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_treeview/flutter_simple_treeview.dart';
 import 'package:scroll_to_id/scroll_to_id.dart';
@@ -111,6 +113,18 @@ body() {
               )
             ]),
           )),
+    ],
+  );
+}
+
+body3() {
+  final scrollController = ScrollController();
+  ScrollToId scrollToId = ScrollToId(scrollController: scrollController);
+  return InteractiveScrollViewer(
+    scrollToId: scrollToId,
+    children: <ScrollContent>[
+      ScrollContent(id: 'a', child: body1()),
+      ScrollContent(id: 'b', child: body2())
     ],
   );
 }
