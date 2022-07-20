@@ -38,7 +38,8 @@ Drawer drawer(BuildContext context) {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => SecondRoute()),
+              MaterialPageRoute(
+                  builder: (context) => SecondRoute().build(context)),
             );
           },
         ),
@@ -60,7 +61,7 @@ Drawer drawer(BuildContext context) {
 }
 
 class SecondRoute extends StatelessWidget {
-  // const SecondRoute({super.key});
+  //const SecondRoute({super.key});
 
   @override
   Widget build(BuildContext context) {
