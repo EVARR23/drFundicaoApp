@@ -4,7 +4,6 @@ import 'package:drfundicaoapp/ferramentdrawer.dart';
 import 'package:drfundicaoapp/floatAction.dart';
 import 'package:drfundicaoapp/persistentFooterButtons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
             appBar: appBar(),
             body: body3(),
             drawer: drawer(context),
-            floatingActionButton: floatAction(),
+            floatingActionButton: floatAction(context),
             persistentFooterButtons: persistentFooterButtons()));
   }
 }
