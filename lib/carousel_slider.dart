@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-body1() {
+carouselSlider() {
   return CarouselSlider(
     options: CarouselOptions(height: 400.0),
     items: [1, 2, 3, 4, 5].map((i) {
